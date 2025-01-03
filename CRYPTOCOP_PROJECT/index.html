@@ -13,7 +13,7 @@
         .icon-sm {
             width: 80px;
             height: 80px;
-            object-fit: contain;
+            object-fit: contain;   
         }
 
         .card-img-top {
@@ -120,6 +120,8 @@
                     const response = await fetch(url, { headers });
                     if (!response.ok) throw new Error('Failed to fetch data');
                     const data = await response.json();
+                    console.log("data", data);
+                    
 
                     renderCoins(data.data.coins, 'top-cryptos');
                 } catch (error) {
@@ -166,7 +168,7 @@
                     },
                     yaxis: {
                         tooltip: {
-                            enabled: true
+                            enabled: false
                         }
                     }
                 };
