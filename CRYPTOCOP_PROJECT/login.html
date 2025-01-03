@@ -1,151 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>CryptoInfo</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background:  url('bgimag.jpg');
-      background-size: cover;
-    }
-    .container {
-      display: flex;
-      justify-content: space-evenly;
-      width: 60%;
-      max-width: 1200px;
-    }
-  
-    .right-section {
-      background-color: #0f0f3d;
-      padding: 30px;
-      border-radius: 10px;
-      width: 400px;
-    }
-    .right-section h2 {
-      font-size: 1.5rem;
-      margin-bottom: 20px;
-    }
-    .right-section form {
-      display: flex;
-      flex-direction: column;
-    }
-    .right-section form input[type="text"],
-    .right-section form input[type="password"] {
-      padding: 10px;
-      margin-bottom: 15px;
-      border: none;
-      border-radius: 5px;
-      background-color: #1a1a2e;
-      color: #fff;
-    }
-    .right-section form button {
-      padding: 10px;
-      border: none;
-      border-radius: 10px;
-      background-color: #6c5ce7;
-      color: #fff;
-      font-size: 1rem;
-      cursor: pointer;
-    }
-    .right-section .tabs {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 20px;
-    }
-    .right-section .tabs button {
-      background: none;
-      border: none;
-      color: #fff;
-      font-size: 1rem;
-      cursor: pointer;
-    }
-    .right-section .tabs button.active {
-      font-weight: bold;
-      border-bottom: 2px solid #6c5ce7;
-    }
-    .error {
-      color: red;
-      font-size: 14px;
-      text-align: center;
-    }
-    .success {
-      color: green;
-      font-size: 14px;
-      text-align: center;
-    }
-    #guest_entry{
-        margin-top: 10px;
-        background-color: #b4abf8;
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>CryptoInfo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('bgimag.jpg');
+            background-size: cover;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            width: 60%;
+            max-width: 1200px;
+        }
+
+        .right-section {
+            background-color: #0f0f3d;
+            padding: 30px;
+            border-radius: 10px;
+            width: 400px;
+        }
+
+        .right-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .right-section form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .right-section form input[type="text"],
+        .right-section form input[type="password"] {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #1a1a2e;
+            color: #fff;
+        }
+
+        .right-section form button {
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            background-color: #6c5ce7;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .right-section .tabs {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .right-section .tabs button {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .right-section .tabs button.active {
+            font-weight: bold;
+            border-bottom: 2px solid #6c5ce7;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .success {
+            color: green;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        #guest_entry {
+            margin-top: 10px;
+            background-color: #b4abf8;
 
 
-    }
-  </style>
+        }
+    </style>
 </head>
+
 <body>
-  <div class="container">  
-      </div>
+    <div class="container">
+    </div>
     </div>
     <div class="right-section">
-      <div class="tabs">
-        <button class="active">LOGIN</button>
-        <button>SIGN UP</button>
-      </div>
-      <form id="loginForm">
-        <input type="text" id="username" name="username" placeholder="Username" />
-        <input type="password" id="password" name="password" placeholder="Password" />
-        <button type="submit">Login</button>
-        <button type="button" id="guest_entry">Guest Entry</button>
-      </form>
-      <div id="errorMessage" class="error"></div>
-      <div id="successMessage" class="success"></div>
+        <div class="tabs">
+            <button class="active">LOGIN</button>
+            <button>SIGN UP</button>
+        </div>
+        <form id="loginForm">
+            <input type="text" id="username" name="username" placeholder="Username" />
+            <input type="password" id="password" name="password" placeholder="Password" />
+            <button type="submit">Login</button>
+            <button type="button" id="guest_entry">Guest Entry</button>
+        </form>
+        <div id="errorMessage" class="error"></div>
+        <div id="successMessage" class="success"></div>
     </div>
-  </div>
-  <script>
-    const loginForm = document.getElementById('loginForm');
-    const guestEntryButton = document.getElementById('guest_entry');
+    </div>
+    <script>
+        const loginForm = document.getElementById('loginForm');
+        const guestEntryButton = document.getElementById('guest_entry');
 
-    // Login functionality
-    loginForm.addEventListener('submit', function(event) {
-      event.preventDefault();
+        // Login functionality
+        loginForm.addEventListener('submit', function (event) {
+            event.preventDefault();
 
-      const username = document.getElementById('username').value;
-      const password = document.getElementById('password').value;
-      const errorMessage = document.getElementById('errorMessage');
-      const successMessage = document.getElementById('successMessage');
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const errorMessage = document.getElementById('errorMessage');
+            const successMessage = document.getElementById('successMessage');
 
-      // Clear messages
-      errorMessage.textContent = '';
-      successMessage.textContent = '';
+            // Clear messages
+            errorMessage.textContent = '';
+            successMessage.textContent = '';
 
-      // Simple validation
-      if (!username || !password) {
-        errorMessage.textContent = 'Both fields are required.';
-        return;
-      }
+            // Simple validation
+            if (!username || !password) {
+                errorMessage.textContent = 'Both fields are required.';
+                return;
+            }
 
-      // Simulate login validation
-      if (username === 'admin' && password === 'admin123') {
-        successMessage.textContent = `Login successful! Welcome, ${username}.`;
-        setTimeout(() => {
-          window.location.href = '../CRYPTOCOP_PROJECT/index.html'; 
-        }, 1000);
-      } else {
-        errorMessage.textContent = 'Invalid username or password.';
-      }
-    });
+            // Simulate login validation
+            if (username === 'admin' && password === 'admin123') {
+                successMessage.textContent = `Login successful! Welcome, ${username}.`;
+                setTimeout(() => {
+                    window.location.href = '../CRYPTOCOP_PROJECT/index.html';
+                }, 1000);
+            } else {
+                errorMessage.textContent = 'Invalid username or password.';
+            }
+        });
 
-    // Guest Entry functionality
-    guestEntryButton.addEventListener('click', function() {
-      window.location.href = '../CRYPTOCOP_PROJECT/index.html'; 
-    });
-  </script>
+        // Guest Entry functionality
+        guestEntryButton.addEventListener('click', function () {
+            window.location.href = '../CRYPTOCOP_PROJECT/index.html';
+        });
+    </script>
 </body>
+
 </html>
